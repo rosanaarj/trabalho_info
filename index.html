@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img.png" alt="Pocket Calendar Logo" class="logo">
+        <h1>Pocket Calendar</h1>
+        <p>Cada dia é uma nova chance — Organize sua semana e viva o agora!</p>
+        <button id="theme-toggle"> Modo escuro</button>
+        <a href="sobre.html" class="btn-sobre">Sobre</a>
+    </header>
+
+    <section class="calendar">
+        <div class="day">
+            <h3>Segunda</h3>
+            <textarea id="mon"></textarea>
+            <button onclick="saveTask('mon')">Salvar</button>
+       </div>  
+        <div class="day">
+            <h3>Terça</h3>
+            <textarea id="tue"></textarea>
+            <button onclick="saveTask('tue')">Salvar</button>
+        </div>
+        <div class="day">
+            <h3>Quarta</h3>
+            <textarea id="wed"></textarea>
+            <button onclick="saveTask('wed')">Salvar</button>
+        </div>
+        <div class="day">
+            <h3>Quinta</h3>
+            <textarea id="thu"></textarea>
+            <button onclick="saveTask('thu')">Salvar</button>
+        </div>
+        <div class="day">
+            <h3>Sexta</h3>
+            <textarea id="fri"></textarea>
+            <button onclick="saveTask('fri')">Salvar</button>
+        </div>
+        <div class="day">
+            <h3>Sábado</h3>
+            <textarea id="sat"></textarea>
+            <button onclick="saveTask('sat')">Salvar</button>
+        </div>
+        <div class="day">
+            <h3>Domingo</h3>
+            <textarea id="sun"></textarea>
+            <button onclick="saveTask('sun')">Salvar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Pocket Calendar © 2025 — Simplifique sua semana</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
